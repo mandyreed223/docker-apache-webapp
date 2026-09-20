@@ -1,17 +1,5 @@
-# Start with Ubuntu 24.04 LTS
-FROM ubuntu:24.04
+FROM httpd:2.4
 
-# Install Apache without interactive prompts
-RUN apt-get update \
-    && DEBIAN_FRONTEND=noninteractive apt-get install -y apache2 \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
+COPY index.html /usr/local/apache2/htdocs/index.html
 
-# Copy our webpage into Apache's document root
-COPY index.html /var/www/html/index.html
-
-# Document that Apache listens on port 80
 EXPOSE 80
-
-# Run Apache in the foreground so the container stays alive
-CMD ["apachectl", "-D", "FOREGROUND"]
