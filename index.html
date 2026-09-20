@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker Apache Web App</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #0b1f33, #12395b);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 850px;
+            text-align: center;
+            padding: 50px 40px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+        }
+
+        .whale {
+            font-size: 90px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            margin: 10px 0;
+            font-size: 42px;
+            color: #2496ed;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            color: #d9e8f5;
+            line-height: 1.6;
+        }
+
+        .status {
+            display: inline-block;
+            margin: 25px 0;
+            padding: 12px 22px;
+            background-color: #1f8f55;
+            border-radius: 30px;
+            font-weight: bold;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
+
+        .card {
+            width: 180px;
+            padding: 18px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+        }
+
+        .card h3 {
+            color: #58b7ff;
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #d9e8f5;
+        }
+
+        .footer {
+            margin-top: 35px;
+            font-size: 14px;
+            color: #9fc5e0;
+        }
+
+        .green {
+            color: #67d391;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <div class="whale">🐳</div>
+
+        <h1>Docker Apache Web App</h1>
+
+        <p class="subtitle">
+            From <strong>"it works on my machine"</strong>
+            to <strong>"it works in my container."</strong>
+        </p>
+
+        <div class="status">
+            ● Container Status: Running 🚀
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>📦 Containerized</h3>
+                <p>
+                    Apache and the web application are packaged
+                    together in a Docker image.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🔁 Repeatable</h3>
+                <p>
+                    The environment can be rebuilt consistently
+                    using a Dockerfile.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🌐 Portable</h3>
+                <p>
+                    Build the image once and run the container
+                    wherever Docker is available.
+                </p>
+            </div>
+
+        </div>
+
+        <p class="footer">
+            Built with curiosity, troubleshooting,
+            and probably a few broken containers.
+            <span class="green">💚</span>
+        </p>
+
+    </main>
+
+</body>
+</html>
